@@ -1,26 +1,12 @@
-import { Button } from "./components/ui/button";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button"
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div className="bg-yellow-500">
-        <Button>Click Me</Button>
-      </div>
-      <div className="px-6 ">
-        <Tabs defaultValue="account" className="w-[400px] ">
-          <TabsList>
-            <TabsTrigger value="account">Movies</TabsTrigger>
-            <TabsTrigger value="password">Tv Shows</TabsTrigger>
-          </TabsList>
-          {/* <TabsContent value="account">
-          Make changes to your account here.
-        </TabsContent> */}
-          {/* <TabsContent value="password">Change your password here.</TabsContent> */}
-        </Tabs>
-      </div>
-    </>
-  );
+    <div>
+      <Button variant="default" size="ms">Click Me</Button>
+      
+    </div>
+  )
 }
 
-export default App;
+export default App
